@@ -11,7 +11,7 @@ let heading=`<h1> Showing Live News updates regarding country :${value}</h1>`
 let newHTML=""
 articles.forEach(element => {
     let newsHtml=`<div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-10">
+    <div class="col-sm-6 col-md-4 col-lg-10 container">
     
       <div class="thumbnail">
       <b><h3>Title:${element["title"]}</h3></b>
