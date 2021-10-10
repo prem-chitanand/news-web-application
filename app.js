@@ -35,7 +35,23 @@ country.value=""
 
 }
 else{
-    window.alert(" please enter country code");
+
+
+    let html="";
+   html+=`<div class="alert alert-danger alert-dismissible " role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> <b>please enter country code!.</b>
+  </div>`
+  document.getElementById('alert').innerHTML=html;
+    setTimeout(() => {
+      document.getElementById('alert').innerHTML="";
+      
+    }, 2000);
+   
+  
+
+ 
+  
 }
 
 }
